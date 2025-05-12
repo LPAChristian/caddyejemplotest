@@ -1,0 +1,8 @@
+*.quiere.cafe {
+  root * /srv/{host}
+  file_server
+
+  tls {
+    dns cloudflare {env.CF_API_TOKEN}
+  }
+}
